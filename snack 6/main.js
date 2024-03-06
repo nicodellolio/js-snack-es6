@@ -1,57 +1,56 @@
 
-let randomPoints = Math.floor(Math.random(25) * 90);
-let randomFouls = Math.floor(Math.random(100) * 500);
 
 const teams = [
     {
         name: "Liverpool",
-        points: randomPoints,
-        fouls: randomFouls
+        points: 0,
+        fouls: 0
     },
     {
         name: "Manchster City",
-        points: randomPoints,
-        fouls: randomFouls
+        points: 0,
+        fouls: 0
     },
     {
         name: "Arsenal",
-        points: randomPoints,
-        fouls: randomFouls
+        points: 0,
+        fouls: 0
     },
     {
         name: "Aston Villa",
-        points: randomPoints,
-        fouls: randomFouls
+        points: 0,
+        fouls: 0
     },
     {
         name: "Tottenham",
-        points: randomPoints,
-        fouls: randomFouls
+        points: 0,
+        fouls: 0
     },
     {
         name: "Manchester United",
-        points: randomPoints,
-        fouls: randomFouls
+        points: 0,
+        fouls: 0
     },
     {
         name: "West Ham",
-        points: randomPoints,
-        fouls: randomFouls
+        points: 0,
+        fouls: 0
     }
 ]
 
-const [team1,team2, team3, team4, team5, team6, team7] = teams
+const valueAssignment = teams.map((team) => {
+    team.points = Math.floor(Math.random(25) * 90);
+    team.fouls = Math.floor(Math.random(100) * 500);
+})
 console.log(teams);
 
+// const [team1,team2, team3, team4, team5, team6, team7] = teams
 
-function myFunction (...severalTeams){
-    const {name, fouls} = severalTeams
-    console.log(name, fouls);
-}
-myFunction(team1,team2, team3, team4, team5, team6, team7)
+newTable = teams.map((team) => {
+    const {name, fouls} = team;
+    return { name, fouls };
 
-// teams.forEach(team => {
-//     newTable.push(team)
-// });
-// console.log(newTable);
-    
+});
+console.log(newTable);
+
+
