@@ -37,5 +37,5 @@ const animals = [
 ]
 console.log(animals);
 
-const mammaliaList = animals.filter((animal) => animal.classe === "Mammiferi")
+const mammaliaList = animals.filter(animal => animal.classe === "Mammiferi")
 console.log(mammaliaList);
