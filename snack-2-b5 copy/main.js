@@ -1,9 +1,17 @@
 
 const word = 'Mannaggia'
 
-function flipWords(word) {
+//unsing split, reverse, join
+function flipWordsSRJ(word) {
     const reversedWord = word.split('').reverse().join('')
     console.log(reversedWord);
 }
+flipWordsSRJ(word)
 
-flipWords(word)
+//using spread
+function flipWordsSPR (){
+    const reversedWord = [...word].reverse().join('')
+    console.log(reversedWord);
+}
+flipWordsSPR(word)
+
