@@ -3,10 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Team Table</title>
+    <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Verdana, sans-serif
+        }
+        .container.original-table{
+            margin: auto;
+            width: 60%;
+            color: white;
+            background-image: url(./Premier-League-Symbol.png);
+            background-size: cover;
+            background-position: -6rem -3rem;
+            background-color: lightblue;
+            border-radius: 50px;
+            display: flex;
+            padding: 1rem 2rem;
+
+
+            .name-col{
+                width: 60%;
+                background-color: ligh;
+                .name{
+                    font-size: 1.75rem;
+                }
+            }
+            .points-col{
+                width: 20%;
+                .points{
+                    font-size: 1.75rem;
+                    list-style: none;
+                }
+            }
+            .fouls-col{
+                width: 20%;
+                .fouls{
+                    font-size: 1.75rem;
+                    list-style: none;
+                }
+            }
+    
+        }
+
+        .container.short-table{
+            margin: auto;
+            margin-top: 10rem;
+            width: 50%;
+            color: white;
+            background-image: url(./Premier-League-Symbol.png);
+            background-size: cover;
+            background-position: -6rem -3rem;
+            background-color: purple;
+            border-radius: 50px;
+            display: flex;
+            padding: 1rem 2rem;
+
+            & .short-name-col{
+                width: 70%;
+                .short-name{
+                    font-size: 1.75rem;
+                }
+            }
+            & .short-fouls-col{
+                
+                .short-fouls{
+                    font-size: 1.75rem;
+                    list-style: none;
+                }
+            }
+
+        }
+    </style>
 </head>
 <body>
     
+    <div class="container original-table">
+
+        <div class="name-col">
+            <h1>Team</h1>
+            <div class="name-row">
+                <ol class="name">
+                </ol>
+            </div>
+        </div>
+
+        <div class="points-col">
+            <h1>Points</h1>
+            <div class="points-row">
+                <ul class="points">
+                </ul>
+            </div>
+        </div>
+
+        <div class="fouls-col">
+            <h1>Fouls</h1>
+            <div class="fouls-row">
+                <ul class="fouls">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container short-table">
+
+        <div class="short-name-col">
+            <h1>Team</h1>
+            <div class="name-row">
+                <ol class="short-name">
+                </ol>
+            </div>
+        </div>
+
+        <div class="short-fouls-col">
+            <h1>Fouls</h1>
+            <div class="fouls-row">
+                <ul class="short-fouls">
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
     <script src="main.js"></script>
 </body>
 </html>

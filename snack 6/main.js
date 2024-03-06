@@ -39,7 +39,7 @@ const teams = [
 ]
 
 const valueAssignment = teams.map((team) => {
-    team.points = Math.floor(Math.random(25) * 90);
+    team.points = Math.floor(Math.random(5) * 90);
     team.fouls = Math.floor(Math.random(100) * 500);
 })
 console.log(teams);
@@ -53,4 +53,26 @@ newTable = teams.map((team) => {
 });
 console.log(newTable);
 
+//original table
 
+const nameElement = document.querySelector('.name')
+const pointsElement = document.querySelector('.points')
+const foulsElement = document.querySelector('.fouls')
+
+teams.forEach(team => {
+    const {name, points, fouls} = team
+    nameElement.insertAdjacentHTML('beforeend',`<li>${name}</li>`)
+    pointsElement.insertAdjacentHTML('beforeend',`<li>${points}</li>`)
+    foulsElement.insertAdjacentHTML('beforeend',`<li>${fouls}</li>`)
+});
+
+///short table
+
+const shortNameElement = document.querySelector('.short-name')
+const shortFoulsElement = document.querySelector('.short-fouls')
+
+teams.forEach(team => {
+    const {name, points, fouls} = team
+    shortNameElement.insertAdjacentHTML('beforeend',`<li>${name}</li>`)
+    shortFoulsElement.insertAdjacentHTML('beforeend',`<li>${fouls}</li>`)
+});
