@@ -31,3 +31,11 @@ const lightestBikeArray = bikes.filter(bike => bike.weight <= lowerWeight)
 const lightestBike = lightestBikeArray[0].name
 console.log(`The lightest bike we can offer is the "${lightestBike}"
 with a weight of ${lowerWeight}kg`);
+
+//bonus
+const speechElement = document.querySelector('.speech');
+const markup = `The lightest bike we can offer is the "${lightestBike}" with a weight of ${lowerWeight}kg`
+
+speechElement.innerHTML=(markup)
+
+
