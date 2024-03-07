@@ -22,8 +22,8 @@ const bikes = [
     }
 ]
 console.log(bikes);
+// const [bike1, bike2, bike3, bike4, bike5] = bikes
 
-const [bike1, bike2, bike3, bike4, bike5] = bikes
 
 const lowerWeight = Math.min(...bikes.map(bike => bike.weight))
 
